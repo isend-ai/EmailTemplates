@@ -2,9 +2,9 @@ from playwright.sync_api import sync_playwright
 from PIL import Image
 import os
 
-HTML_FILE = "../cine-mania-template/cine-mania-template.html"
-FULL_IMG = "../cine-mania-template/email_full.png"
-THUMB_IMG = "../cine-mania-template/email_thumb.png"
+HTML_FILE = "../one-day-sale-template/one-day-sale-template.html"
+FULL_IMG = "../one-day-sale-template/email_full.png"
+THUMB_IMG = "../one-day-sale-template/email_thumb.png"
 THUMB_HEIGHT = 600  # fixed height for thumbnail
 
 def take_screenshot():
