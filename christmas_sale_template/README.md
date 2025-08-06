@@ -1,4 +1,4 @@
-# Chocolate Day
+# Christmas sale
 
 A festive and eye-catching template to showcase your Christmas Day deals, holiday offers, and seasonal promotions.
 
