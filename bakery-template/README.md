@@ -1,6 +1,6 @@
 # bakery_template
 
-A cheerful and personalized digital voucher template perfect for gifting special birthday surprises and experiences.
+A warm and inviting template perfect for showcasing baked goods, daily specials, and sweet treats from your bakery."
 
 <p align="center">
   <img src="email_full.png" alt="Agriculture_newsletter_template" style="width:100%; max-width:1000px;" />
