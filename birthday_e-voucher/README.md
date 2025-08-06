@@ -1,4 +1,4 @@
-# birthday_e-voucher
+# Birthday_e-voucher
 
 A cheerful and personalized digital voucher template perfect for gifting special birthday surprises and experiences.
 
