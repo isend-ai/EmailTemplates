@@ -1,5 +1,5 @@
 
-# back_to_school_template
+# Back To School
 
 A vibrant and organized template to welcome students back, share important dates, and kick-start the new school year with enthusiasm.
 
