@@ -1,4 +1,4 @@
-# Agriculture_newsletter_template
+# Agriculture Newsletter
 
 Stay informed with the latest trends, innovations, and updates from the world of agriculture, all in one neatly designed newsletter.
 
