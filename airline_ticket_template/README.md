@@ -1,4 +1,4 @@
-# airline_ticket_template
+# Airline Ticket
 
 A sleek and customizable template designed to replicate real airline tickets for events, travel itineraries, or creative projects.
 
