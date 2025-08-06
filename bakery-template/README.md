@@ -1,4 +1,4 @@
-# bakery_template
+# Bakery Template
 
 A warm and inviting template perfect for showcasing baked goods, daily specials, and sweet treats from your bakery."
 
