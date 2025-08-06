@@ -2,15 +2,16 @@ from playwright.sync_api import sync_playwright
 from PIL import Image
 import os
 
-HTML_FILE = "../environment_day_template/environment_day_template.html"
-FULL_IMG = "../environment_day_template/email_full.png"
-THUMB_IMG = "../environment_day_template/email_thumb.png"
+HTML_FILE = "../transaction-fail-update-template/transaction-fail-update-template.html"
+FULL_IMG = "../transaction-fail-update-template/email_full.png"
+THUMB_IMG = "../transaction-fail-update-template/email_thumb.png"
 THUMB_HEIGHT = 600  # fixed height for thumbnail
 
 def take_screenshot():
     with sync_playwright() as p:
         browser = p.chromium.launch()
-        page = browser.new_page(viewport={"width": 1400, "height": 2000})  # larger viewport to prevent clipping
+        # Start with a large viewport width but minimal height
+        page = browser.new_page(viewport={"width": 1400, "height": 800})
 
         # Load local HTML file
         path = f"file://{os.path.abspath(HTML_FILE)}"
@@ -19,7 +20,20 @@ def take_screenshot():
         # Wait for full body render
         page.wait_for_selector("body")
 
-        # Get body dimensions
+        # Get body dimensions to determine actual content height
+        body_element = page.query_selector("body")
+        body_box = body_element.bounding_box()
+        
+        if not body_box:
+            print("❌ Could not determine body bounding box.")
+            browser.close()
+            return
+            
+        # Set viewport height to match content height (with small buffer)
+        content_height = int(body_box['height']) + 50
+        page.set_viewport_size({"width": 1400, "height": content_height})
+        
+        # Re-get body dimensions after viewport adjustment
         body_element = page.query_selector("body")
         body_box = body_element.bounding_box()
 
